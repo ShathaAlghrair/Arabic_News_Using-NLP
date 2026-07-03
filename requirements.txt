@@ -1,0 +1,30 @@
+# ── Scraping ──────────────────────────────────────────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.3
+feedparser>=6.0.11
+tqdm>=4.66.4
+
+# ── Preprocessing ─────────────────────────────────────────────────────────────
+camel-tools>=1.5.4          # MLE lemmatizer / morphological analysis
+
+# ── Embeddings (E5) + AraBERT word-splitter ───────────────────────────────────
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+torch>=2.2.0
+numpy>=1.26.0
+sentencepiece>=0.2.0        # SentencePiece tokenizer (E5 / AraBERT)
+protobuf>=3.20.0            # required by transformers tokenizers
+
+# ── Clustering (BERTopic) ─────────────────────────────────────────────────────
+scikit-learn>=1.4.0
+bertopic>=0.16.0
+hdbscan>=0.8.33
+umap-learn>=0.5.6
+pandas>=2.2.0
+
+# ── Summarization ─────────────────────────────────────────────────────────────
+openai>=1.0.0              # LLMSummarizer (opt-in); extractive needs no extra deps
+
+# ── App: Semantic Search UI ───────────────────────────────────────────────────
+streamlit>=1.33.0
+plotly>=5.20.0
